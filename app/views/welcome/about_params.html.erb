@@ -1,0 +1,14 @@
+<style>
+  body {
+    background: <%= @color %>;
+  }
+</style>
+
+<h1>Passing params from view to controller</h1>
+<h3>My favorite color is <%= @color %>!</h3>
+<br>
+<% if @size.to_i > 12 %>
+    <h3> I have HUGE feet!</h3>
+<% else %> 
+    <h3>My shoe size is <%= @size %></h3>
+<% end %>

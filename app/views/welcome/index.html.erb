@@ -8,5 +8,9 @@
 <% end %>
 </ul>
 
+<br>
+<br>
 
-<%= image_tag "iceland.jpg", alt: "Iceland", id: "Iceland", class: "country", height: 300, width:400 %>
+<% @country_images.each do |pic| %>
+<p><%= image_tag pic, alt: "country", class: "country", height: 300, width:400 %></p><br>
+<% end %>
