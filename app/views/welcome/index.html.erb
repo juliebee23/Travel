@@ -12,5 +12,7 @@
 <br>
 
 <% @country_images.each do |pic| %>
-<p><%= image_tag pic, alt: "country", class: "country", height: 300, width:400 %></p><br>
+<p><%= image_tag pic, alt: "country", class: "country", height: 300, width:400, class: "img-responsive" %></p><br>
 <% end %>
+
+<%= link_to "About", param_path, class: "navbar-brand" %>

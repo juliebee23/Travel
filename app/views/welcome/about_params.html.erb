@@ -12,3 +12,8 @@
 <% else %> 
     <h3>My shoe size is <%= @size %></h3>
 <% end %>
+<%= link_to "Olive", param_path(color: "Olive"), class: "btn btn-primary" %>
+<%= link_to "Purple", param_path(color:"Purple"), class: "btn btn-danger" %>
+<%= link_to "Home", index_path, class: "navbar-brand" %>
+
+
