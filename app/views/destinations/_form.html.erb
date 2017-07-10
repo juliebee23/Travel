@@ -22,8 +22,18 @@
   </div>
 
   <div class="field form-group">
+  <%= form.label :population %><br>
+  <%= form.number_field :population, class: "form-control" %>
+  </div>
+
+  <div class="field form-group">
     <%= form.label :description %>
     <%= form.text_area :description, id: :destination_description, class: "form-control", rows: "5" %>
+  </div>
+
+    <div class="field form-group">
+    <%= form.label "Photo" %><br>
+    <%= form.file_field :avatar %>
   </div>
 
   <div class="actions form-group">
